@@ -8,5 +8,4 @@ dependencies:
   - pandas
   - matplotlib
   - numpy
-  - scikit-learn
-prefix: /opt/homebrew/Caskroom/miniforge/base/envs/wordle-ai
+  - pre-commit
