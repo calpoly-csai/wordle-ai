@@ -1,0 +1,12 @@
+name: wordle-ai
+channels:
+  - anaconda
+  - conda-forge
+dependencies:
+  - python=3.10
+  - tensorflow
+  - pandas
+  - matplotlib
+  - numpy
+  - scikit-learn
+prefix: /opt/homebrew/Caskroom/miniforge/base/envs/wordle-ai
