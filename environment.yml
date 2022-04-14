@@ -3,9 +3,11 @@ channels:
   - anaconda
   - conda-forge
 dependencies:
+  - pre-commit
+  - matplotlib
   - python=3.9
   - tensorflow
   - pandas
-  - matplotlib
   - numpy
-  - pre-commit
+  - black==22.3.0
+prefix: C:\Users\micro\miniconda3\envs\wordle-ai
