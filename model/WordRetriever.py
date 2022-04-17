@@ -20,3 +20,7 @@ def store_data():
         file = open(get_file_path(), "w")
         file.write(data)
         file.close
+
+
+def get_file_path():
+    return path.join(directory_name, file_name)
