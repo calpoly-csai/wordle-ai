@@ -11,10 +11,12 @@ def retrieve_data():
     return data
 
 def store_data():
-    data = retrieve_data()
-    os.mkdir(directory_name)
-    file = open(directory_name + "/" + file_name, "w")
-    file.write(data)
-    file.close
+    if(os.path.isfile("./" + directory_name + "/" + file_name) == False):
+        data = retrieve_data()
+        os.mkdir(directory_name)
+        file = open(directory_name + "/" + file_name, "w")
+        file.write(data)
+        file.close
+    
+    
 
-store_data()
