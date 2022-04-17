@@ -1,7 +1,7 @@
 import urllib.request
 import os
 
-raw_data_source = "https://gist.github.com/cfreshman/cdcdf777450c5b5301e439061d29694c"
+raw_data_source = "https://raw.githubusercontent.com/tabatkins/wordle-list/main/words"
 directory_name = "WordleData"
 file_name = "wordList.txt"
 
