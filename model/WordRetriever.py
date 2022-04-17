@@ -1,5 +1,6 @@
 import urllib.request
 import os
+from os import path
 
 raw_data_source = "https://raw.githubusercontent.com/tabatkins/wordle-list/main/words"
 directory_name = "WordleData"
@@ -13,9 +14,9 @@ def retrieve_data():
 
 
 def store_data():
-    if os.path.isfile("./" + directory_name + "/" + file_name) == False:
+    if os.path.isfile(get_file_path()) == False:
         data = retrieve_data()
         os.mkdir(directory_name)
-        file = open(directory_name + "/" + file_name, "w")
+        file = open(get_file_path(), "w")
         file.write(data)
         file.close
